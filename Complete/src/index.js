@@ -4,7 +4,11 @@ import ReactDOM from "react-dom";
 import CustomComponent from "./Components/CustomComponent";
 
 const App = () => {
-  return <CustomComponent></CustomComponent>;
+  return (
+    <CustomComponent>
+      <div>Some Children</div>
+    </CustomComponent>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("app"));
